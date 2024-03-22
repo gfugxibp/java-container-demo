@@ -17,6 +17,7 @@ public class HelloController {
     @GetMapping
     public String helloworld(){
         count++;
+        System.out.println("Build me!");
         return String.format(
                 RESPONSE_STRING_FORMAT,
                 System.getenv().getOrDefault("HOSTNAME", "unknown"),
